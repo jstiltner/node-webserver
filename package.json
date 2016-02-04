@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -17,5 +18,14 @@
   "bugs": {
     "url": "https://github.com/jstiltner/node-webserver/issues"
   },
-  "homepage": "https://github.com/jstiltner/node-webserver#readme"
+  "homepage": "https://github.com/jstiltner/node-webserver#readme",
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "express": "^4.13.4",
+    "jade": "^1.11.0",
+    "node-cal": "github:nss-cohort-11/node-cal"
+  },
+  "devDependencies": {
+    "nodemon": "^1.8.1"
+  }
 }
