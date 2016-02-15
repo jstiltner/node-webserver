@@ -12,6 +12,17 @@
     "type": "git",
     "url": "git+https://github.com/jstiltner/node-webserver.git"
   },
+  "eslintConfig": {
+    "env": {
+      "mocha": true,
+      "node": true,
+      "es6": true
+    },
+    "extends": "eslint:recommended",
+    "rules": {
+      "no-console": 0
+    }
+  },
   "keywords": [],
   "author": "Jason Stiltner <jasonstiltner@gmail.com>",
   "license": "MIT",
@@ -21,11 +32,15 @@
   "homepage": "https://github.com/jstiltner/node-webserver#readme",
   "dependencies": {
     "body-parser": "^1.14.2",
+    "cheerio": "^0.20.0",
     "express": "^4.13.4",
     "imgur": "^0.1.7",
     "jade": "^1.11.0",
+    "lodash": "^4.2.1",
+    "mongoose": "^4.4.3",
     "multer": "^1.1.0",
-    "node-cal": "github:nss-cohort-11/node-cal"
+    "node-cal": "github:nss-cohort-11/node-cal",
+    "request": "^2.69.0"
   },
   "devDependencies": {
     "nodemon": "^1.8.1"

@@ -1,7 +1,6 @@
-doctype html
-html
-  head
-    title= title
-  body
+//-index.jade
+extends ./layout.jade
+
+block content
     h1 Welcome to #{title}
     p The date is now #{date.toLocaleDateString('en-US')}
